@@ -25,3 +25,14 @@ const bikes = [
   },
 
 ]
+
+let lightest = bikes[0];
+
+for (let i = 0; i < bikes.length; i++) {
+
+  if (bikes[i].weight < lightest.weight) {
+    lightest = bikes[i];
+  }
+}
+
+console.log(lightest);
