@@ -36,3 +36,33 @@ for (let i = 0; i < bikes.length; i++) {
 }
 
 console.log(lightest);
+
+const squads = [
+  {
+    team: 'Napoli',
+    totScore: Math.floor(Math.random() * 100),
+    faulsSuffered: Math.floor(Math.random() * 100)
+  },
+  {
+    team: 'Inter',
+    totScore: Math.floor(Math.random() * 100),
+    faulsSuffered: Math.floor(Math.random() * 100)
+  },
+  {
+    team: 'Milan',
+    totScore: Math.floor(Math.random() * 100),
+    faulsSuffered: Math.floor(Math.random() * 100)
+  },
+  {
+    team: 'Juventus',
+    totScore: Math.floor(Math.random() * 100),
+    faulsSuffered: Math.floor(Math.random() * 100)
+  },
+  {
+    team: 'Atalanta',
+    totScore: Math.floor(Math.random() * 100),
+    faulsSuffered: Math.floor(Math.random() * 100)
+  }
+]
+
+console.log(squads);
