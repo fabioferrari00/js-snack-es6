@@ -1,0 +1,27 @@
+//Creare un array di oggetti:
+// Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
+// Stampare a schermo la bici con peso minore.
+
+const bikes = [
+  {
+    brand: 'Rockrider',
+    weight: 900
+  },
+  {
+    brand: 'Engwe',
+    weight: 1200
+  },
+  {
+    brand: 'Fiido E-Bike',
+    weight: 950
+  },
+  {
+    brand: 'Turbo Lego G4',
+    weight: 650
+  },
+  {
+    brand: 'Peak E-Bike',
+    weight: 950
+  },
+
+]
