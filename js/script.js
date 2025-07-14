@@ -28,6 +28,7 @@ const bikes = [
 
 let lightest = bikes[0];
 
+//cerco nell'array di bici quella con la proprietà weight inferiore
 for (let i = 0; i < bikes.length; i++) {
 
   if (bikes[i].weight < lightest.weight) {
@@ -37,32 +38,48 @@ for (let i = 0; i < bikes.length; i++) {
 
 console.log(lightest);
 
+//creo l'array di oggetti di squadre 
 const squads = [
   {
     team: 'Napoli',
     totScore: Math.floor(Math.random() * 100),
-    faulsSuffered: Math.floor(Math.random() * 100)
+    foulsSuffered: Math.floor(Math.random() * 100)
   },
   {
     team: 'Inter',
     totScore: Math.floor(Math.random() * 100),
-    faulsSuffered: Math.floor(Math.random() * 100)
+    foulsSuffered: Math.floor(Math.random() * 100)
   },
   {
     team: 'Milan',
     totScore: Math.floor(Math.random() * 100),
-    faulsSuffered: Math.floor(Math.random() * 100)
+    foulsSuffered: Math.floor(Math.random() * 100)
   },
   {
     team: 'Juventus',
     totScore: Math.floor(Math.random() * 100),
-    faulsSuffered: Math.floor(Math.random() * 100)
+    foulsSuffered: Math.floor(Math.random() * 100)
   },
   {
     team: 'Atalanta',
     totScore: Math.floor(Math.random() * 100),
-    faulsSuffered: Math.floor(Math.random() * 100)
+    foulsSuffered: Math.floor(Math.random() * 100)
   }
 ]
 
 console.log(squads);
+
+//mi creo un nuovo array dove andrò ad inserire le squadre con le proprietà specifiche
+const newSquads = [];
+
+for (let i = 0; i < squads.length; i++) {
+  const squad = squads[i];
+
+  let newSquad = {
+    team: squad.team,
+    foulsSuffered: squad.foulsSuffered
+  }
+
+  newSquads.push(newSquad);
+}
+console.log(newSquads);
